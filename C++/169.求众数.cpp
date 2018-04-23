@@ -1,6 +1,6 @@
 /*
-¸ø¶¨Ò»¸ö´óÐ¡Îª n µÄÊý×é£¬ÕÒµ½ÆäÖÐµÄÖÚÊý¡£ÖÚÊýÊÇÖ¸ÔÚÊý×éÖÐ³öÏÖ´ÎÊý´óÓÚ ? n/2 ? µÄÔªËØ¡£
-Äã¿ÉÒÔ¼ÙÉèÊý×éÊÇ·Ç¿ÕµÄ£¬²¢ÇÒÊý×éÖÐµÄÖÚÊýÓÀÔ¶´æÔÚ¡£
+ç»™å®šä¸€ä¸ªå¤§å°ä¸º n çš„æ•°ç»„ï¼Œæ‰¾åˆ°å…¶ä¸­çš„ä¼—æ•°ã€‚ä¼—æ•°æ˜¯æŒ‡åœ¨æ•°ç»„ä¸­å‡ºçŽ°æ¬¡æ•°å¤§äºŽ ? n/2 ? çš„å…ƒç´ ã€‚
+ä½ å¯ä»¥å‡è®¾æ•°ç»„æ˜¯éžç©ºçš„ï¼Œå¹¶ä¸”æ•°ç»„ä¸­çš„ä¼—æ•°æ°¸è¿œå­˜åœ¨ã€‚
 */
 
 #include <stdio.h>
@@ -18,7 +18,7 @@ public:
 	{
 		int N = nums.size() / 2;
 
-		// Ç°ÃæÊÇÊý×Ö,ºóÃæÊÇ³öÏÖµÄ´ÎÊý
+		// å‰é¢æ˜¯æ•°å­—,åŽé¢æ˜¯å‡ºçŽ°çš„æ¬¡æ•°
 		map<int, int> mapNums;
 		for (size_t i = 0; i < nums.size(); i++)
 		{
@@ -35,7 +35,7 @@ public:
 			}
 		}
 
-		// nÊÇÒ»¸öpair
+		// næ˜¯ä¸€ä¸ªpair
 		for (auto n : mapNums)
 		{
 			if (n.second > N)
